@@ -64,19 +64,71 @@ public class Game
         room15 = new Room("Blank");
         room16 = new Room("Blank");
         
-        // initialise room exits
-        //outside.setExit("east", theater);
-        //outside.setExit("south", lab);
-        //outside.setExit("west", pub);
-
-        //theater.setExit("west", outside);
-
-        //pub.setExit("east", outside);
-
-        //lab.setExit("north", outside);
-        //lab.setExit("east", office);
-
-        //office.setExit("west", lab);
+        start.setExit("north", room6);
+        start.setExit("west", room9);
+        start.setExit("east", room10);
+        start.setExit("south", room12);
+        
+        room1.setExit("east", room2);
+        room1.setExit("south", room5);
+        
+        room2.setExit("north", finish);
+        room2.setExit("west", room1);
+        room2.setExit("east", room3);
+        room2.setExit("south", room6);
+        
+        room3.setExit("west", room2);
+        room3.setExit("south", room7);
+        
+        room4.setExit("east", room5);
+        
+        room5.setExit("north", room1);
+        room5.setExit("west", room4);
+        room5.setExit("east", room6);
+        room5.setExit("south", room9);
+        
+        room6.setExit("north", room2);
+        room6.setExit("west", room5);
+        room6.setExit("east", room7);
+        room6.setExit("south", start);
+        
+        room7.setExit("north", room3);
+        room7.setExit("west", room6);
+        room7.setExit("east", room8);
+        room7.setExit("south", room10);
+        
+        room8.setExit("west", room7);
+        
+        room9.setExit("north", room5);
+        room9.setExit("east", start);
+        room9.setExit("south", room11);
+        
+        room10.setExit("north", room7);
+        room10.setExit("west", start);
+        room10.setExit("south", room13);
+        
+        room11.setExit("north", room9);
+        room11.setExit("east", room12);
+        room11.setExit("south", room14);
+        
+        room12.setExit("north", start);
+        room12.setExit("west", room11);
+        room12.setExit("east", room13);
+        room12.setExit("south", room15);
+        
+        room13.setExit("north", room10);
+        room13.setExit("west", room12);
+        room13.setExit("south", room16);
+        
+        room14.setExit("north", room11);
+        room14.setExit("east", room15);
+        
+        room15.setExit("north", room12);
+        room15.setExit("west", room14);
+        room15.setExit("east", room16);
+        
+        room16.setExit("north", room13);
+        room16.setExit("west", room15);
 
         currentRoom = start;  // start game outside
     }
