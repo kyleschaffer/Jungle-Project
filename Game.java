@@ -37,24 +37,17 @@ public class Game
     private void createRooms()
     {
         Room start, finish, room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12, room13, room14, room15, room16;
-      
-        // create the rooms
-        //outside = new Room("outside the main entrance of the university");
-        //theater = new Room("in a lecture theater");
-        //pub = new Room("in the campus pub");
-        //lab = new Room("in a computing lab");
-        //office = new Room("in the computing admin office");
         
-        start = new Room("Blank");
-        finish= new Room("Blank");
+        start = new Room("You find yourself in the middle of a jungle with no weapons or tools. You draw an X on the ground with a stick to mark your starting position.");
+        finish= new Room("You exit through a clearing in the woods and see a city skyline! You're free!");
         room1 = new Room("Blank");
         room2 = new Room("Blank");
         room3 = new Room("Blank");
-        room4 = new Room("Blank");
+        room4 = new Room("You enter the cave.");
         room5 = new Room("Blank");
         room6 = new Room("Blank");
         room7 = new Room("Blank");
-        room8 = new Room("Blank");
+        room8 = new Room("You find yourself facing the edge of a cliff. There is no way to cross. You should turn back.");
         room9 = new Room("Blank");
         room10 = new Room("Blank");
         room11 = new Room("Blank");
